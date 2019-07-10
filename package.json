@@ -1,0 +1,23 @@
+{
+  "name": "forstudyme",
+  "version": "1.0.0",
+  "description": "For Study Me",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v02m/pugland.git"
+  },
+  "author": "Valerius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v02m/pugland/issues"
+  },
+  "homepage": "https://github.com/v02m/pugland#readme"
+}
