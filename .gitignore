@@ -1,6 +1,6 @@
 .idea/
-bild
-node_modules
+bild/
+node_modules/
 npm-debug.log
 .DS_Store
 
