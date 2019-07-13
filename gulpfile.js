@@ -37,8 +37,8 @@ gulp.task('templates:compile', function buildHTML() {
 
 gulp.task('styles:compile', function () {
     return gulp.src('source/styles/main.scss')
-        // .pipe(sass({outputStyle: 'compesded'}).on('error', sass.logError))
-        .pipe(sass({ outputStyle: 'expandedded'}).on('error', sass.logError))
+        // .pipe(sass({outputStyle:'compesded'}).on('error', sass.logError))
+        .pipe(sass({ outputStyle:'expandedded'}).on('error', sass.logError))
         .pipe(rename('main.min.css'))
         .pipe(gulp.dest('build/css'));
 });

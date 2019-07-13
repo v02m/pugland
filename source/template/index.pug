@@ -8,32 +8,11 @@ html(lang='ru')
         title
             block title
         block links
-            link(href='css/style.css', rel='stylesheet')
+            link(href='css/main.min.css', rel='stylesheet')
     body
         // 
             begin project
             Edit important meta(name='description', content='Super Page Here')
 
-        h1 Привет
-        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora perspiciatis et minus ipsum totam ducimus vero, distinctio maiores eaque ex ullam facilis libero ipsa quos aliquid tenetur qui pariatur! Cupiditate?
-
-        - var links = ['Home','Contacts','About','Price']
-        - var anotherlinks = ['AnotherHome','AnotherContacts','AnotherAbout','Price']
-        - var sites = ['google.com','ya.ru','rtyu.ty','ahsjjd.re']
-        ul.list
-            each item in links 
-                li: a(href="#").list__link.list__link-nav #{item}
-                //- for site in sites
-                //-     a(href=site)
-                    
-        mixin list(xren, className, active)
-            ul(class=className)
-                each item, index in xren
-                    li(class=className + '__item')
-                        if index === active
-                            a(class=className + '__active' class=className+ '__link') #{item}
-                        else
-                            a(class=className + '__link') #{item}
+        include sections/header
         
-        +list(['first','second'], 'list', 0)
-        +list(['first','second'], 'list', 1)
